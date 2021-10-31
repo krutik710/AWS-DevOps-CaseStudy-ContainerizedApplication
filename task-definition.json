@@ -5,8 +5,8 @@
     {
       "name": "main",
       "image": "930031050988.dkr.ecr.ap-south-1.amazonaws.com/factorial-flask-app:79362f8ebda06bc08cc70a6814638bd99a34621f",
-      "cpu": 0,
-      "memory": 128,
+      "cpu": "0",
+      "memory": "128",
       "links": [],
       "portMappings": [
         {
@@ -48,7 +48,7 @@
   "revision": 1,
   "volumes": [],
   "status": "ACTIVE",
-  "cpu": 0,
+  "cpu": "0",
   "memory": "128",
   "taskDefinitionArn": "arn:aws:ecs:ap-south-1:930031050988:task-definition/flask-factorial-ecs-service:1",
   "requiresAttributes": [
