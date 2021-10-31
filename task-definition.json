@@ -5,8 +5,8 @@
     {
       "name": "main",
       "image": "930031050988.dkr.ecr.ap-south-1.amazonaws.com/factorial-flask-app:79362f8ebda06bc08cc70a6814638bd99a34621f",
-      "cpu": "0",
-      "memory": "128",
+      "cpu": 0,
+      "memory": 128,
       "links": [],
       "portMappings": [
         {
@@ -19,38 +19,31 @@
       "entryPoint": [],
       "command": [],
       "environment": [],
-      "environmentFiles": [],
       "mountPoints": [],
       "volumesFrom": [],
-      "secrets": [],
       "dnsServers": [],
       "dnsSearchDomains": [],
-      "extraHosts": [],
       "dockerSecurityOptions": [],
       "dockerLabels": {},
-      "ulimits": [],
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "flask-factorial-ecs-cluster-LogGroup-hZBKJmPqAbhs",
           "awslogs-region": "ap-south-1",
           "awslogs-stream-prefix": "flask-factorial-ecs-service"
-        },
-        "secretOptions": []
+        }
       },
       "systemControls": []
     }
   ],
-  "requiresCompatibilities": [
-      "FARGATE"
-    ],
+  "requiresCompatibilities": [],
   "networkMode": "bridge",
-  "revision": 1,
+  "revision": 2,
   "volumes": [],
   "status": "ACTIVE",
-  "cpu": "0",
+  "cpu": "128",
   "memory": "128",
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:930031050988:task-definition/flask-factorial-ecs-service:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:930031050988:task-definition/flask-factorial-ecs-service:2",
   "requiresAttributes": [
     {
       "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
@@ -67,7 +60,7 @@
     {
       "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
     }
-],
+  ],
   "placementConstraints": [],
   "compatibilities": [
     "EC2",
